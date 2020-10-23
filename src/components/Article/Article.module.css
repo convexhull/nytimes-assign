@@ -16,9 +16,21 @@
 .info {
     height: 50%;
     width: 100%;
+    padding: 1rem
 }
 
+.article__abstract {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
 
+.article__subtitle {
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: silver;
+}
 
 .thumbnail__img {
     height: 100%;
@@ -52,4 +64,13 @@
     display: initial;
     background-color: black;
     
+}
+
+
+.article__footer {
+    display: flex;
+}
+
+.article__like-btn {
+    margin-left: auto;
 }

@@ -39,11 +39,12 @@ class Article extends Component {
                     </div>
                 </div>
                 <div className={classes["info"]}>
-                    <p>{this.props.article.abstract.slice(0,100) + "..." || "Some abstract..."}</p>
-                    <p>September 11 | 9:30PM</p>
-                    <div>
-                        <p>Free</p>
-                        <p>H</p>
+                    <p className={classes["article__abstract"]}>{this.props.article.abstract && this.props.article.abstract.slice(0,100) + "..." || "Some abstract..."}</p>
+                    <p className={classes["article__subtitle"]}>September 11 | 9:30PM</p>
+                    <p className={classes["article__subtitle"]}>{this.props.article.source}</p>
+                    <div className={classes["article__footer"]}>
+                        <p className={classes["article__cost"]}>Free</p>
+                        <p className={classes["article__like-btn"]}><i class="far fa-heart"></i></p>
                     </div>
                 </div>
 
