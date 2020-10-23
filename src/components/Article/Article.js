@@ -39,7 +39,7 @@ class Article extends Component {
                     </div>
                 </div>
                 <div className={classes["info"]}>
-                    <p>{this.props.article.abstract || "Some abstract..."}</p>
+                    <p>{this.props.article.abstract.slice(0,100) + "..." || "Some abstract..."}</p>
                     <p>September 11 | 9:30PM</p>
                     <div>
                         <p>Free</p>

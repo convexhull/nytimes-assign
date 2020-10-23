@@ -35,14 +35,21 @@
 
 
 .thumbnail__overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.thumbnail__overlay button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
 }
 
 
 .thumbnail__overlay--show {
     display: initial;
+    background-color: black;
+    
 }

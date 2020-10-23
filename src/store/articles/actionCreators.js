@@ -17,11 +17,11 @@ const fetchArticlesSuccess = (fetchedArticles) => {
     }
 }
 
-export const asyncFetchArticlesStart = () => {
+export const asyncFetchArticlesStart = (pageNum) => {
     return async (dispatch) => {
         dispatch(fetchArticlesStart());
         try {
-            let apiResponse = await Axios.get('/articlesearch.json?q=election&api-key=QIAT8Y7GtXpHnunOCHrl1As7iqfqAmbk');
+            let apiResponse = await Axios.get(`/articlesearch.json?q=election&api-key=QIAT8Y7GtXpHnunOCHrl1As7iqfqAmbk&page=${pageNum}`);
             dispatch(fetchArticlesSuccess(apiResponse.data.response.docs));
         } catch(e) {
             console.log(e);

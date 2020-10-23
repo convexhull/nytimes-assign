@@ -16,7 +16,7 @@ const reducer = (state = initState, action) => {
         case actionTypes.FETCH_ARTICLES_SUCCESS:
             return {
                 ...state,
-                articlesToDisplay: action.payload
+                articlesToDisplay: [...state.articlesToDisplay, ...action.payload]
             }
         default:    
             return state;
