@@ -35,7 +35,7 @@ class Article extends Component {
                         <img src={thumbnailImageUrl} />
                     </div>
                     <div class={imgOverlayClasses.join(' ')}>
-                        <button>BUY</button>
+                        <button className={classes["article__buy-btn"]}>BUY</button>
                     </div>
                 </div>
                 <div className={classes["info"]}>

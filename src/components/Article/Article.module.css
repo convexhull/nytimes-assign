@@ -4,6 +4,10 @@
     border-radius: 5px;
 }
 
+.Article:hover {
+    cursor: pointer;
+}
+
 
 .thumbnail {
     height: 50%;
@@ -38,18 +42,26 @@
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: black;
 }
 
 .thumbnail__img img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
+
+
 
 
 .thumbnail__overlay {
     display: none;
     height: 100%;
     width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .thumbnail__overlay button {
@@ -62,9 +74,10 @@
 
 .thumbnail__overlay--show {
     display: initial;
-    background-color: black;
-    
+    background-color: rgba(0,0,0,0.5);
 }
+
+
 
 
 .article__footer {
@@ -73,4 +86,22 @@
 
 .article__like-btn {
     margin-left: auto;
+}
+
+
+.article__buy-btn {
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #55c5ff;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+
+
+.article__buy-btn:hover {
+    background-color: #0092dd;
+    color: black;
 }

@@ -27,7 +27,7 @@ class ArticlesManualLoader extends Component {
     let options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1,
+      threshold: 0.95,
     };
     let observer = new IntersectionObserver(
       this.intersectionObserverCallback,
@@ -48,7 +48,7 @@ class ArticlesManualLoader extends Component {
       <Fragment>
         {/* <button onClick={this.props.onLoadArticles}>Load!</button> */}
         <div className={classes["Loader"]}>{articlesToDisplay}</div>
-        <div ref={this.loaderRef}>
+        <div ref={this.loaderRef} className={classes["Spinner"]}>
           <img src={Spinner} />
         </div>
       </Fragment>
