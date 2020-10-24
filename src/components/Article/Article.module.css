@@ -33,7 +33,7 @@
     font-weight: bold;
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
-    color: silver;
+    color: rgb(136, 136, 136);
 }
 
 .thumbnail__img {
@@ -82,6 +82,9 @@
 
 .article__footer {
     display: flex;
+    font-size: 0.7rem;
+    margin-top: auto;
+    font-weight: 700;
 }
 
 .article__like-btn {
